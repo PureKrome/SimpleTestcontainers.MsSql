@@ -1,7 +1,7 @@
 <h1 align="center">Simple: Microsoft SqlServer Tescontainer Helpers</h1>
 
 <div align="center">
-  Making it simple to validate your tests that depend on Microsoft Sql Server (aka. tests which query your DB)
+  ⚡ Making it simple to run your database tests in true database-isolation, quickly! ⚡
 </div>
 
 <br />
