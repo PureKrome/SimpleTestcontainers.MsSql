@@ -75,7 +75,7 @@ jobs:
       - run: dotnet run --project src/SimpleTestcontainers.MsSql.Tests/SimpleTestcontainers.MsSql.Tests.csproj --configuration Debug --verbosity minimal --no-build
 
       # - name: Code coverage
-      #   uses: codecov/codecov-action@v4
+      #   uses: codecov/codecov-action@v5
       #   with:
       #     token: ${{ secrets.CODECOV_TOKEN }}
       #     directory: "./.codecoverage"
