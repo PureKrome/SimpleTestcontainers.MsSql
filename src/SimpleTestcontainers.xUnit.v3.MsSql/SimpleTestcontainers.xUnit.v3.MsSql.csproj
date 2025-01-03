@@ -9,13 +9,13 @@
         <Authors>Justin Adler</Authors>
         <Description>A simplified way to create a Microsoft SqlServer Testcontainer with each test having it's own unique database in the same docker image instance. This means each test is having is running in true data isolation. It also means you can parallelize your tests easier, instead of having all the tests run in a (common) single collection/sequential run.
         </Description>
-        <Product>Simple Microsoft SqlServer Testcontainers</Product>
+        <Product>Simple Testcontainers xUnit v3 for Microsoft SqlServer</Product>
         <Copyright>2025</Copyright>
         <PackageIcon>icon.jpg</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/PureKrome/SimpleTestcontainers.MsSql</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>testcontainers;mssql;sqlserver;worlddomination;worldomination;unicorn;magicalunicorn;magical-unicorn</PackageTags>
+        <PackageTags>testcontainers;xunit;mssql;sqlserver;worlddomination;worldomination;unicorn;magicalunicorn;magical-unicorn</PackageTags>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     </PropertyGroup>
