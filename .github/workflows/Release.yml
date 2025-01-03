@@ -23,7 +23,7 @@ env:
 
 jobs:
   build_and_create_a_nuget_publish:
-    name: Build and publish a NuGet (RELEASE)
+    name: 📦 Build and publish a NuGet (RELEASE)
     runs-on: ubuntu-latest
 
     steps:
