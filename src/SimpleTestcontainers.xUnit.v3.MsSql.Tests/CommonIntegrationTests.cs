@@ -1,7 +1,7 @@
 [assembly: AssemblyFixture(typeof(SqlServerFixture))]
 [assembly: CaptureConsole]
 
-namespace SimpleTestcontainers.MsSql.Tests;
+namespace SimpleTestcontainers.xUnit.v3.MsSql.Tests;
 
 public abstract class CommonIntegrationTests(SqlServerFixture SqlServerFixture, ITestOutputHelper TestOutputHelper)
 {

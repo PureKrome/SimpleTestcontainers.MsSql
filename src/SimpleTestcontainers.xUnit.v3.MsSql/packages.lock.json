@@ -27,17 +27,6 @@
           "Testcontainers": "4.1.0"
         }
       },
-      "xunit.v3": {
-        "type": "Direct",
-        "requested": "[1.0.0, )",
-        "resolved": "1.0.0",
-        "contentHash": "jomUqCyfbILuGa4zWFAU1knj1n5/1H44ACDo7iu6DZlmmSbYlyYgB6Vzy8gxab6eh78otXDF/ntjktDCRkTMIg==",
-        "dependencies": {
-          "xunit.analyzers": "1.18.0",
-          "xunit.v3.assert": "[1.0.0]",
-          "xunit.v3.core": "[1.0.0]"
-        }
-      },
       "Azure.Core": {
         "type": "Transitive",
         "resolved": "1.38.0",
@@ -395,6 +384,13 @@
           "xunit.v3.runner.common": "[1.0.0]"
         }
       },
+      "WorldDomination.SimpleTestcontainers.xUnit.v3.Databases": {
+        "type": "Project",
+        "dependencies": {
+          "Testcontainers": "[4.1.0, )",
+          "xunit.v3": "[1.0.0, )"
+        }
+      },
       "Testcontainers": {
         "type": "CentralTransitive",
         "requested": "[4.1.0, )",
@@ -406,6 +402,17 @@
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
           "SSH.NET": "2024.1.0",
           "SharpZipLib": "1.4.2"
+        }
+      },
+      "xunit.v3": {
+        "type": "CentralTransitive",
+        "requested": "[1.0.0, )",
+        "resolved": "1.0.0",
+        "contentHash": "jomUqCyfbILuGa4zWFAU1knj1n5/1H44ACDo7iu6DZlmmSbYlyYgB6Vzy8gxab6eh78otXDF/ntjktDCRkTMIg==",
+        "dependencies": {
+          "xunit.analyzers": "1.18.0",
+          "xunit.v3.assert": "[1.0.0]",
+          "xunit.v3.core": "[1.0.0]"
         }
       }
     }

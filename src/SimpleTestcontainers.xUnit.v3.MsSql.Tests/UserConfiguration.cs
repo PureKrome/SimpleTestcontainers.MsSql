@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace SimpleTestcontainers.MsSql.Tests;
+namespace SimpleTestcontainers.xUnit.v3.MsSql.Tests;
 
 public class UserConfiguration : IEntityTypeConfiguration<User>
 {

@@ -422,18 +422,6 @@
         "resolved": "4.5.4",
         "contentHash": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg=="
       },
-      "Testcontainers": {
-        "type": "Transitive",
-        "resolved": "4.1.0",
-        "contentHash": "5oudr81h9084amKZrjVIWdVWycR2YhqT9ePnN/ID7xinwx3ZLAI4EhYiyurfrDMvWcHJp5+c9x+qPRxOcq1IXQ==",
-        "dependencies": {
-          "Docker.DotNet.Enhanced": "3.126.1",
-          "Docker.DotNet.Enhanced.X509": "3.126.1",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "SSH.NET": "2024.1.0",
-          "SharpZipLib": "1.4.2"
-        }
-      },
       "xunit.analyzers": {
         "type": "Transitive",
         "resolved": "1.18.0",
@@ -489,12 +477,19 @@
           "xunit.v3.runner.common": "[1.0.0]"
         }
       },
-      "WorldDomination.SimpleTestcontainers.MsSql": {
+      "WorldDomination.SimpleTestcontainers.xUnit.v3.Databases": {
+        "type": "Project",
+        "dependencies": {
+          "Testcontainers": "[4.1.0, )",
+          "xunit.v3": "[1.0.0, )"
+        }
+      },
+      "WorldDomination.SimpleTestcontainers.xUnit.v3.MsSql": {
         "type": "Project",
         "dependencies": {
           "Microsoft.Data.SqlClient": "[5.2.2, )",
           "Testcontainers.MsSql": "[4.1.0, )",
-          "xunit.v3": "[1.0.0, )"
+          "WorldDomination.SimpleTestcontainers.xUnit.v3.Databases": "[1.0.0, )"
         }
       },
       "Microsoft.Data.SqlClient": {
@@ -523,6 +518,19 @@
           "Microsoft.EntityFrameworkCore.Analyzers": "9.0.0",
           "Microsoft.Extensions.Caching.Memory": "9.0.0",
           "Microsoft.Extensions.Logging": "9.0.0"
+        }
+      },
+      "Testcontainers": {
+        "type": "CentralTransitive",
+        "requested": "[4.1.0, )",
+        "resolved": "4.1.0",
+        "contentHash": "5oudr81h9084amKZrjVIWdVWycR2YhqT9ePnN/ID7xinwx3ZLAI4EhYiyurfrDMvWcHJp5+c9x+qPRxOcq1IXQ==",
+        "dependencies": {
+          "Docker.DotNet.Enhanced": "3.126.1",
+          "Docker.DotNet.Enhanced.X509": "3.126.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "SSH.NET": "2024.1.0",
+          "SharpZipLib": "1.4.2"
         }
       },
       "Testcontainers.MsSql": {

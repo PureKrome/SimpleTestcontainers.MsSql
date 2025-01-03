@@ -1,4 +1,4 @@
-namespace SimpleTestcontainers.MsSql.Tests;
+namespace SimpleTestcontainers.xUnit.v3.MsSql.Tests;
 
 internal static class CommonTestHelpers
 {
@@ -8,11 +8,11 @@ internal static class CommonTestHelpers
         ITestOutputHelper testOutputHelper)
     {
         // Grab our unique connection string.
-        var connectionString = testsFixture.CreateDbConnectionString(testContext, testOutputHelper);
+        var connectionStringInfo = testsFixture.CreateUniqueConnectionStringInfo(testContext, testOutputHelper);
 
         // Wire up our EF Core DbContext to this unique connection string.
         var efOptions = new DbContextOptionsBuilder<SqlServerDbContext>()
-            .UseSqlServer(connectionString)
+            .UseSqlServer(connectionStringInfo.UniqueConnectionString)
             .Options;
 
         // Create our context.

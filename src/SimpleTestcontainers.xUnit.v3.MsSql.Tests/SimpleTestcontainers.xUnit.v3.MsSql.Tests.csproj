@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SimpleTestcontainers.MsSql\SimpleTestcontainers.MsSql.csproj" />
+      <ProjectReference Include="..\SimpleTestcontainers.xUnit.v3.MsSql\SimpleTestcontainers.xUnit.v3.MsSql.csproj" />
     </ItemGroup>
 
 </Project>
